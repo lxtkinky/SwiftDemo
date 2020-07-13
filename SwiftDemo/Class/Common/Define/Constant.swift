@@ -18,4 +18,4 @@ func rgb(_ red : UInt32, _ green : UInt32, _ blue : UInt32) -> UIColor {
 func kRandomColor() -> UIColor {
     return rgb(arc4random() % 255, arc4random() % 255, arc4random() % 255)
 }
-//let KRandomColor = rgb(arc4random() % 255, arc4random() % 255, arc4random() % 255)
+
