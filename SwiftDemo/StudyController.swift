@@ -12,8 +12,38 @@ class StudyController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = .white
         // Do any additional setup after loading the view.
+        闭包()
+        元组()
+    }
+    
+    func 笔记(name : String?) -> Void {
+        //空合运算符
+//        var name : String?
+        let userName = name ?? "lixt"   //空合运算符
+        let nickName = name != nil ? name! : "lxt"  //空合运算符是这个表达式的缩写
+        print(userName, nickName)
+        
+        for num in 1...5{
+            print(num)
+        }
+        
+        for num in stride(from: 1, to: 1000, by: 5) {
+            print(num)
+        }
+    }
+    
+    func 元组() -> Void {
+        let httpRes = (404, "Not Found");
+        let (statusCode, ErrorMsg) = httpRes;
+        print("the statusCode = \(statusCode) error msg = \(ErrorMsg)");
+    }
+    
+    func 闭包() -> Void {
+        let numbers = [1, 2, 3, 4, 5]
+        let mappedNumbers = numbers.map({number in 3 * number})
+        print(mappedNumbers)
     }
     
     func 基础语法_可选类型() -> Void {

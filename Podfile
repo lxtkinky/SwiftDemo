@@ -9,4 +9,5 @@ target 'SwiftDemo' do
     pod 'Alamofire'
     pod 'SwiftyJSON'
     pod 'HMSegmentedControl'
+    pod 'HandyJSON', '~> 5.0.1'
 end

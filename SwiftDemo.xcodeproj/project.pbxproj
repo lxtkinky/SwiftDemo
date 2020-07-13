@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4244B7D24B805990018E4E8 /* LXTRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4244B7C24B805990018E4E8 /* LXTRequestManager.swift */; };
+		F4244B7F24B8066B0018E4E8 /* LXTResDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4244B7E24B8066B0018E4E8 /* LXTResDataModel.swift */; };
+		F4244B8124B84F290018E4E8 /* LXTMatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4244B8024B84F290018E4E8 /* LXTMatchModel.swift */; };
+		F4251EB524BC089C003B3CE4 /* LXTCirclePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4251EB424BC089B003B3CE4 /* LXTCirclePageView.swift */; };
+		F4251EB824BC0A06003B3CE4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4251EB724BC0A06003B3CE4 /* Constant.swift */; };
+		F4251EBC24BC1350003B3CE4 /* LXTCircleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4251EBB24BC1350003B3CE4 /* LXTCircleController.swift */; };
 		F44B574D2445683B00E29405 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B574C2445683B00E29405 /* AppDelegate.swift */; };
 		F44B574F2445683B00E29405 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B574E2445683B00E29405 /* SceneDelegate.swift */; };
 		F44B57512445683B00E29405 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44B57502445683B00E29405 /* ViewController.swift */; };
@@ -41,6 +47,12 @@
 		196CAE10707D74BD39F21EC7 /* Pods_SwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37A9997E0E368588635B8BC8 /* Pods-SwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9AF276693D27D48E47027E93 /* Pods-SwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftDemo/Pods-SwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F4244B7C24B805990018E4E8 /* LXTRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXTRequestManager.swift; sourceTree = "<group>"; };
+		F4244B7E24B8066B0018E4E8 /* LXTResDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXTResDataModel.swift; sourceTree = "<group>"; };
+		F4244B8024B84F290018E4E8 /* LXTMatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXTMatchModel.swift; sourceTree = "<group>"; };
+		F4251EB424BC089B003B3CE4 /* LXTCirclePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXTCirclePageView.swift; sourceTree = "<group>"; };
+		F4251EB724BC0A06003B3CE4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		F4251EBB24BC1350003B3CE4 /* LXTCircleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXTCircleController.swift; sourceTree = "<group>"; };
 		F4470021244849400060A02F /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4470023244849430060A02F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4470025244849710060A02F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +134,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F4251EB124BC0857003B3CE4 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				F4251EB924BC12D4003B3CE4 /* Controller */,
+				F4251EB224BC0863003B3CE4 /* Common */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		F4251EB224BC0863003B3CE4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F4251EB624BC0985003B3CE4 /* Define */,
+				F4251EB324BC086E003B3CE4 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F4251EB324BC086E003B3CE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4251EB424BC089B003B3CE4 /* LXTCirclePageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4251EB624BC0985003B3CE4 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				F4251EB724BC0A06003B3CE4 /* Constant.swift */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		F4251EB924BC12D4003B3CE4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F4251EBA24BC12E3003B3CE4 /* ScrollView */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F4251EBA24BC12E3003B3CE4 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F4251EBB24BC1350003B3CE4 /* LXTCircleController.swift */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
 		F44B57402445683A00E29405 = {
 			isa = PBXGroup;
 			children = (
@@ -150,8 +212,12 @@
 				F44B574C2445683B00E29405 /* AppDelegate.swift */,
 				F44B574E2445683B00E29405 /* SceneDelegate.swift */,
 				F44B57502445683B00E29405 /* ViewController.swift */,
+				F4244B7C24B805990018E4E8 /* LXTRequestManager.swift */,
+				F4244B7E24B8066B0018E4E8 /* LXTResDataModel.swift */,
+				F4244B8024B84F290018E4E8 /* LXTMatchModel.swift */,
 				F45B7FCD2466B00C0084F88A /* StudyController.swift */,
 				F44B577E24458D0200E29405 /* TXModel.swift */,
+				F4251EB124BC0857003B3CE4 /* Class */,
 				F44B57522445683B00E29405 /* Main.storyboard */,
 				F44B57552445684100E29405 /* Assets.xcassets */,
 				F44B57572445684100E29405 /* LaunchScreen.storyboard */,
@@ -355,9 +421,15 @@
 			files = (
 				F45B7FCE2466B00C0084F88A /* StudyController.swift in Sources */,
 				F44B57512445683B00E29405 /* ViewController.swift in Sources */,
+				F4244B7D24B805990018E4E8 /* LXTRequestManager.swift in Sources */,
 				F44B577F24458D0200E29405 /* TXModel.swift in Sources */,
+				F4244B8124B84F290018E4E8 /* LXTMatchModel.swift in Sources */,
 				F44B574D2445683B00E29405 /* AppDelegate.swift in Sources */,
+				F4251EBC24BC1350003B3CE4 /* LXTCircleController.swift in Sources */,
 				F44B574F2445683B00E29405 /* SceneDelegate.swift in Sources */,
+				F4251EB824BC0A06003B3CE4 /* Constant.swift in Sources */,
+				F4244B7F24B8066B0018E4E8 /* LXTResDataModel.swift in Sources */,
+				F4251EB524BC089C003B3CE4 /* LXTCirclePageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
